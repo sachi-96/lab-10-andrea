@@ -1,0 +1,43 @@
+---
+title: "lab10-andrea"
+author: "Sachi Shiroma"
+date: "11/30/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(janitor)
+library(usethis)
+library(beepr)
+library(paletteer)
+library(sf)
+library(praise)
+```
+
+## beepr beeps
+
+Use the function 'beep()' in the beepr package to make an audio alert when your code is done running.
+
+```{r, eval = FALSE}
+for(i in rev(seq(1:9999))) {
+  
+  print(paste(i, "bottles of beer on the wall"))
+}
+
+beep(5)
+```
+
+## praise and cowsay
+
+Packages built with a single purpose: to be kind and fun.
+
+```{r}
+praise("${Exclamation}, ${EXCLAMATION}...${exclamation}!!!!")
+
+praise("Holy ${creating}, Batman - this code is ${ADJECTIVE}!")
+```
+
+Use cowsay::say() to make a character say something to you.
+
